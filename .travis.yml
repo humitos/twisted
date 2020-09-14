@@ -31,8 +31,6 @@ jobs:
     - services:
         - docker
       env: PIP=pip TOXENV=wheels
-    - python: 3.5
-      env: TOXENV=py35-alldeps-withcov-posix,coverage-prepare,codecov-push,coveralls-push
     - python: 3.6
       env: TOXENV=py36-nodeps-withcov-posix,coverage-prepare,codecov-push,coveralls-push
     - python: 3.6
